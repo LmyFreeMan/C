@@ -1,0 +1,4 @@
+﻿  calculator.cpp
+g:\大二c程序\四则运算\自己做\栈的实例22\calculator\calculator.cpp(6): warning C4101: 'flag': unreferenced local variable
+  calculator.vcxproj -> G:\大二c程序\四则运算\自己做\栈的实例22\Debug\calculator.exe
+  calculator.vcxproj -> G:\大二c程序\四则运算\自己做\栈的实例22\Debug\calculator.pdb (Full PDB)
