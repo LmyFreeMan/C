@@ -1,31 +1,31 @@
 #include<stdio.h>
-//swap(½»»»Á½¸öÊıµÄÖµ)
+//swap(äº¤æ¢ä¸¤ä¸ªæ•°çš„å€¼)
 void swap(int *a,int *b){
-	int temp;
+    int temp;
     temp=*a;
-	*a=*b;
+    *a=*b;
     *b=temp;
 }
-//show(±éÀúÊı×é)
+//show(éå†æ•°ç»„)
 void show(int *arr,int len){
-	 for(int i=0;i<len;i++)
-	  printf("%d",arr[i]);
+    for(int i=0;i<len;i++)
+      printf("%d",arr[i]);
 }
-//bubblesort(Ã°ÅİËã·¨)
+//bubblesort(å†’æ³¡ç®—æ³•)
 void bubblesort(int *arr,int len){
-	for(int i=0;i<len-1;i++)
-		for(int j=i+1;j<len-1;j++)
-			if(*(arr+i)>*(arr+j))
-				swap(&arr[i],&arr[j]);
+     for(int i=0;i<len-1;i++)
+			for(int j=i+1;j<len-1;j++)
+		  	if(*(arr+i)>*(arr+j))
+	     	 swap(&arr[i],&arr[j]);
 }
-//Ö÷º¯Êı
+//ä¸»å‡½æ•°
 int main(){
-	int arr[] = {2,5,3,6,8};
-	int len = sizeof(arr)/sizeof(arr[0]);
-	printf("Î´ÅÅĞòÇ°µÄÊı×éÎª:");
-  	show(arr,len);
-    bubblesort(arr,len);
-	printf("\nÅÅĞòºóµÄÊı×éÎª:");
-	show(arr,len);
-	return 0;
+			int arr[] = {2,5,3,6,8};
+			int len = sizeof(arr)/sizeof(arr[0]);
+			printf("æœªæ’åºå‰çš„æ•°ç»„ä¸º:");
+			show(arr,len);
+			bubblesort(arr,len);
+			printf("\næ’åºåçš„æ•°ç»„ä¸º:");
+			show(arr,len);
+			return 0;
 }
